@@ -23,3 +23,13 @@
 
 % TODO WORKAROUND fix "Package fancyhdr Warning: \footskip is too small (30.0pt)"
 \setlength{\footskip}{108.80003pt}
+
+% TODO WORKAROUND avoid orphaned section headers
+% https://github.com/moderncv/moderncv/issues/10
+% https://github.com/xdanaux/moderncv/issues/82
+\usepackage{needspace}
+\let\oldsection=\section
+\renewcommand{\section}{
+    \needspace{3\baselineskip}
+    \oldsection
+}
