@@ -1,4 +1,4 @@
-DOCUMENT_NAME = Application
+DOCUMENT_NAME = Bewerbung
 BIB = biber -output-directory=out # BibLaTeX
 GLOS = makeglossaries -d out # Glossaries
 LUALATEX = lualatex --shell-escape --output-directory=out
@@ -8,7 +8,7 @@ default:
 	@echo 'make bib    | Erstelle bib-Datei für Literaturverzeichnis'
 	@echo 'make clean  | Säubere das Arbeitsverzeichnis von temporären Dateien und Verzeichnissen.'
 	@echo 'make doc    | Erstelle komplettes Dokument und lese die Ausgabe. Falls Fehler auftreten führe make bib oder make doc erneut aus.'
-	@echo 'make gloss   | Erstelle Dateien für Inhaltsverzeichnisse'
+	@echo 'make gloss  | Erstelle Dateien für Inhaltsverzeichnisse'
 
 all: doc bib doc_twice copy_example
 
@@ -19,7 +19,7 @@ clean:
 	rm -f .log quit.tex *.acn *gdf *.glg *. glo *. gls *.ist *.lol *.nlo *.nls *.ps *.out *.dvi *.log *.aux *.blg *.toc *.log *.bbl *.lof *.lot *.idx *.brf *.ilg *.ind abschnitte/*.aux bilder/*.aux
 
 copy_example:
-	cp -f out/Application.pdf example/
+	cp -f out/Bewerbung.pdf beispiele/
 
 doc:
 	$(LUALATEX) $(DOCUMENT_NAME)

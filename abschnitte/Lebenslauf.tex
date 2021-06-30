@@ -1,0 +1,97 @@
+%! Author = martin
+%! Date = 29.06.21
+
+
+\makecvtitle
+
+
+\section{Bildung}\label{sec:bildung}
+\cventry{2009--2012}{Abschluss 1}{Institut}{Stadt}{\textit{Note}}{Beschreibung} % arguments 3 to 6 can be left empty
+\cventry{2012--2017}{Abschluss 2}{Institut}{Stadt}{\textit{Note}}{Beschreibung}
+
+
+\section{Master Thesis}\label{sec:master-thesis}
+\cvitem{Titel}{\emph{Titel}}
+\cvitem{Betreuer}{Betreuer}
+\cvitem{Beschreibung}{Kurze Zusammenfassung der Arbeit}
+
+
+\section{Erfahrung}\label{sec:erfahrung}
+
+\subsection{Beruflich}\label{subsec:beruflich}
+\cventry{2017--2021}{Jobtitel}{Arbeitgeber}{Stadt}{}{Generelle Beschreibung, die nicht länger als 1--2 Zeilen ist.\\
+Detaillierte Leistungen:
+    \begin{itemize}
+        \item Leistung 1
+        \item Leistung 2 (with sub-leistungen)
+        \begin{itemize}
+            \item Sub-leistung (a);
+            \item Sub-leistung (b), with sub-sub-leistungen (nicht machen!);
+            \begin{itemize}
+                \item Sub-sub-leistung i;
+                \item Sub-sub-leistung ii;
+                \item Sub-sub-leistung iii;
+            \end{itemize}
+            \item Sub-leistung (c);
+        \end{itemize}
+        \item Leistung 3
+        \item Leistung 4
+    \end{itemize}}
+\cventry{2021--2022}{Jobtitel}{Arbeitgeber}{Stadt}{}{Beschreibung Zeile 1\\Beschreibung Zeile 2}
+
+\subsection{Verschiedenes}\label{subsec:verschiedenes}
+\cventry{2013--2013}{Jobtitel}{Arbeitgeber}{Stadt}{}{Beschreibung}
+
+
+\section{Sprachen}\label{sec:sprachen}
+\cvitemwithcomment{Sprache 1}{Fähigkeitenniveau}{Kommentar}
+\cvitemwithcomment{Sprache 2}{Fähigkeitenniveau}{Kommentar}
+\cvitemwithcomment{Sprache 3}{Fähigkeitenniveau}{Kommentar}
+\cvitemwithcomment{Sprache 4}{Fähigkeitenniveau}{Kommentar}
+
+
+\section{IT-Erfahrungen}\label{sec:it-erfahrungen}
+\cvdoubleitem{Kategorie 1}{XXX, YYY, ZZZ}{Kategorie 4}{XXX, YYY, ZZZ}
+\cvdoubleitem{Kategorie 2}{XXX, YYY, ZZZ}{Kategorie 5}{XXX, YYY, ZZZ}
+\cvdoubleitem{Kategorie 3}{XXX, YYY, ZZZ}{Kategorie 6}{XXX, YYY, ZZZ}
+
+
+\section{Fähigkeitenmatrix}\label{sec:faehigkeitenmatrix}
+\cvskilllegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
+\cvskillhead[0em][Level][Fähigkeit][Jahre][Bemerkung]
+\cvskillentry*{Sprache:}{3}{Python}{2}{Ich bin so erfahren in Python und habe schon eine Million Projekte realisiert. Mindestens.}
+\cvskillentry{}{2}{LilyPond}{14}{So viele Notenblätter! Mann, ich bin der Beste!}
+\cvskillentry{}{3}{\LaTeX}{14}{Offensichtlich rocke ich bei \LaTeX}
+\cvskillentry*{OS:}{3}{Linux}{2}{Ich benutze übrigends nur Archlinux}
+\cvskillentry*[1em]{Methoden}{4}{SCRUM}{8}{SCRUM Master seit 5 years}
+
+
+\section{Interessen}\label{sec:Interessen}
+\cvitem{Hobby 1}{Beschreibung}
+\cvitem{Hobby 2}{Beschreibung}
+\cvitem{Hobby 3}{Beschreibung}
+
+
+\section{Extra 1}\label{sec:extra-1}
+\cvlistitem{Element 1}
+\cvlistitem{Element 2}
+\cvlistitem{Element 3. Dieser Punkt ist besonders lang und erstreckt sich daher normalerweise über mehrere Zeilen. Haben Sie die Einrückung beim Zeilenumbruch bemerkt?}
+
+
+\section{Extra 2}\label{sec:extra-2}
+\cvlistdoubleitem{Element 1}{Element 4}
+\cvlistdoubleitem{Element 2}{Element 5\cite{MaxMustermann2021a}}
+\cvlistdoubleitem{Element 3}{Element 6. Wie Element 3 in der einspaltigen Liste zuvor ist dieses Element besonders lang, so dass es über mehrere Zeilen umgebrochen wird.}
+
+
+\section{Referenzen}\label{sec:referenzen}
+\begin{cvcolumns}
+    \cvcolumn{Kategorie 1}{\begin{itemize}
+                               \item Person 1\item Person 2\item Person 3
+    \end{itemize}}
+    \cvcolumn{Kategorie 2}{Unter anderem:\begin{itemize}
+                                             \item Person 1, and\item Person 2
+    \end{itemize}(Mehr auf Anfrage)}
+    \cvcolumn[0.5]{Der ganze Rest \& einiges mehr}{\textit{Diese} Person, und auch \textbf{solche} (Alles auf Anfrage verfügbar).}
+\end{cvcolumns}~\nocite{*} % Zum Auflisten aller Einträge, auch wenn sie nicht zitiert werden.
+\printbibliography[title={Veröffentlichungen}]

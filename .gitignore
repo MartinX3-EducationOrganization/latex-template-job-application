@@ -3,7 +3,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-.idea
+.idea/***
 
 # CMake
 cmake-build-*/
@@ -158,7 +158,7 @@ acs-*.bib
 
 # knitr
 *-concordance.tex
-# TODO Uncomment the next line if you use knitr and want to ignore its generated tikz files
+# TODO Uncomment the next Zeile if you use knitr and want to ignore its generated tikz files
 *.tikz
 *-tikzDictionary
 
@@ -251,7 +251,7 @@ pythontex-files-*/
 # xindy
 *.xdy
 
-# xypic precompiled matrices and outlines
+# xypic precompiled matrices and outZeiles
 *.xyc
 *.xyd
 
@@ -303,7 +303,7 @@ TSWLatexianTemp*
 
 # REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
-# Uncomment the next line to have this generated file ignored.
+# Uncomment the next Zeile to have this generated file ignored.
 *Notes.bib
 
-!examples
+!beispiele/***
