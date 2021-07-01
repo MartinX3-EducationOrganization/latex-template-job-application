@@ -14,10 +14,11 @@
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 
-% Literaturverzeichnis nach ISO 690 (Nachfolger von DIN 1505)
-% Further help at https://github.com/michal-h21/biblatex-iso690
-\usepackage[style=iso-authoryear]{biblatex}
-\addbibresource{datenbanken/Veröffentlichungen.bib}
+% Publikationen numerisch aufzählen
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+% Titel der Publikationen ändern
+\renewcommand{\refname}{Veröffentlichungen}
+\bibliographystyle{plain}
 
 % TODO WORKAROUND avoid orphaned section headers
 % https://github.com/moderncv/moderncv/issues/10
