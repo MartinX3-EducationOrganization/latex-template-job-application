@@ -3,10 +3,46 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-.idea/***
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
 
 # CMake
 cmake-build-*/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
 
 # File-based project format
 *.iws
@@ -14,14 +50,26 @@ cmake-build-*/
 # IntelliJ
 out/
 
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
 # JIRA plugin
 atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
 
 ### TeX template
 ## Core latex/pdflatex auxiliary files:
@@ -43,9 +91,12 @@ fabric.properties
 *.xdv
 *-converted-to.*
 # these rules might exclude image files for figures etc.
-*.ps
-*.eps
-*.pdf
+# *.ps
+# *.eps
+# *.pdf
+
+## Generated if empty string is given at "Please type another file name for output:"
+.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -158,8 +209,8 @@ acs-*.bib
 
 # knitr
 *-concordance.tex
-# TODO Uncomment the next Zeile if you use knitr and want to ignore its generated tikz files
-*.tikz
+# TODO Uncomment the next line if you use knitr and want to ignore its generated tikz files
+# *.tikz
 *-tikzDictionary
 
 # listings
@@ -251,7 +302,7 @@ pythontex-files-*/
 # xindy
 *.xdy
 
-# xypic precompiled matrices and outZeiles
+# xypic precompiled matrices and outlines
 *.xyc
 *.xyd
 
@@ -266,6 +317,7 @@ TSWLatexianTemp*
 # WinEdt
 *.bak
 *.sav
+*.tmp
 
 # Texpad
 .texpadtmp
@@ -303,7 +355,6 @@ TSWLatexianTemp*
 
 # REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
-# Uncomment the next Zeile to have this generated file ignored.
-*Notes.bib
+# Uncomment the next line to have this generated file ignored.
+#*Notes.bib
 
-!out/*.pdf

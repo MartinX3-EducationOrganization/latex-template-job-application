@@ -1,3 +1,5 @@
+Download artifact: [![CI](https://github.com/MartinX3-EducationOrganization/latex-template-job-application/actions/workflows/ci.yml/badge.svg)](https://github.com/MartinX3-EducationOrganization/latex-template-job-application/actions/workflows/ci.yml)
+
 # latex-vorlage-job-application
 
 This is a [LaTeX][1] template for job applications with [moderncv][2].
