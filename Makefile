@@ -1,8 +1,8 @@
 DOCUMENT_NAME = Bewerbung
-LUALATEX = latexmk -lualatex --output-directory=out
+COMPILER = latexmk -pdf --output-directory=out
 
 default:
-	$(LUALATEX) $(DOCUMENT_NAME)
+	$(COMPILER) $(DOCUMENT_NAME)
 
 help:
 	@echo 'make       | Erstelle das komplette Dokument mit latexmk'
