@@ -16,12 +16,20 @@
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 \setlength{\footskip}{122.40004pt} % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-% Publikationen numerisch aufzählen
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
 \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
 % Titel der Publikationen ändern
 \renewcommand{\refname}{Veröffentlichungen}
 \bibliographystyle{plain}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
 
 % TODO WORKAROUND avoid orphaned section headers
 % https://github.com/moderncv/moderncv/issues/10
