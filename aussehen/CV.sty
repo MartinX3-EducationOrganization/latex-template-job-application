@@ -24,13 +24,10 @@
 \RequirePackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
-% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
-% Titel der Publikationen ändern
-\renewcommand{\refname}{Veröffentlichungen}
-\bibliographystyle{plain}
+% Veröffentlichungen nach ISO 690 (Nachfolger von DIN 1505)
+% Further help at https://github.com/michal-h21/biblatex-iso690
+\RequirePackage[style=iso-authoryear]{biblatex}
+\addbibresource{datenbanken/Veroeffentlichungen.bib}
 
 % bibliography with mutiple entries
 %\usepackage{multibib}
