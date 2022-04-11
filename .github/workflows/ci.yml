@@ -18,7 +18,7 @@ jobs:
           args: -pdf --output-directory=out
           root_file: Bewerbung.tex
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Bewerbung.pdf.zip
           path: out/Bewerbung.pdf
