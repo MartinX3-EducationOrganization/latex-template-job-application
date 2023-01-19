@@ -10,15 +10,18 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
+      - name: Install TeX Live
+        run: sudo apt update && sudo apt install biber latexmk texlive texlive-bibtex-extra texlive-lang-german texlive-latex-extra texlive-luatex
+      - name: Install the arial font
+        run: |
+          echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+          sudo apt-get install ttf-mscorefonts-installer
       - name: Set up Git repository
         uses: actions/checkout@v3
       - name: Compile LaTeX document
-        uses: dante-ev/latex-action@latest
-        with:
-          args: -pdf --output-directory=out
-          root_file: Bewerbung.tex
+        run: make build
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: Bewerbung.pdf.zip
+          name: Bewerbung.pdf
           path: out/Bewerbung.pdf
