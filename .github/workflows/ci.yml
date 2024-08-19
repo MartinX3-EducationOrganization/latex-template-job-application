@@ -12,10 +12,6 @@ jobs:
     steps:
       - name: Install TeX Live
         run: sudo apt update && sudo apt install biber latexmk texlive texlive-bibtex-extra texlive-fonts-extra texlive-lang-german texlive-latex-extra texlive-luatex
-      - name: Install the arial font
-        run: |
-          echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-          sudo apt-get install ttf-mscorefonts-installer
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: Compile LaTeX document

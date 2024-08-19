@@ -1,5 +1,5 @@
 DOCUMENT_NAME = Bewerbung
-COMPILER = latexmk -pdf --output-directory=out
+COMPILER = latexmk -lualatex --output-directory=out
 
 default | help:
 	@echo 'make | Zeigt die Hilfe'

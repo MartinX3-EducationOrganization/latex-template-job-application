@@ -1,45 +1,35 @@
-%! Package = cv
-%! Author = martin
-%! Date = 30.06.21
-
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{aussehen/CV}[2021/06/30 cv theming Package]
+\ProvidesPackage{aussehen/CV}[2024/08/19 cv theming Package]
+
+\moderncvcolor{blue}
+\moderncvstyle{casual}
+
+% Die Seitenränder anpassen
+\RequirePackage[scale=0.75]{geometry}
+
+% Dinish Schriftart. Siehe https://github.com/playbeing/dinish
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[
+    Extension = .otf,
+    Path = aussehen/font/,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic
+]{DINish}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\setmathfont{Latin Modern Math}
 
 \RequirePackage[ngerman]{babel}
-\RequirePackage{csquotes}
-\RequirePackage[ngerman]{isodate}
 
-% moderncv themes
-\moderncvstyle{casual} % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue} % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-
-\RequirePackage[firstyear=2009,lastyear=2022,marksyr=0.4ex,marksmo=0.2ex]{moderntimeline}
-
-% adjust the page margins
-\RequirePackage[scale=0.75]{geometry}
-\setlength{\footskip}{136.00005pt} % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-% Use the helvet font. A font similliar to Arial
-\RequirePackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-
-% Veröffentlichungen nach ISO 690 (Nachfolger von DIN 1505)
-% Further help at https://github.com/michal-h21/biblatex-iso690
-\RequirePackage[style=iso-authoryear]{biblatex}
-\addbibresource{datenbanken/Veroeffentlichungen.bib}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-
-% TODO WORKAROUND avoid orphaned section headers
+% TODO WORKAROUND avoid orphaned section headers until moderncv 2.4.1
 % https://github.com/moderncv/moderncv/issues/10
 % https://github.com/xdanaux/moderncv/issues/82
 \RequirePackage{needspace}
-\let\oldsection=\section
-\renewcommand{\section}{
+\newcommand{\sectionavoidpagebreak}[2]{
     \needspace{3\baselineskip}
-    \oldsection
+    \section{#1}\label{sec:#2}
 }

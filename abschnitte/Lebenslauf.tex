@@ -1,13 +1,9 @@
-%! Author = martin
-%! Date = 29.06.21
-
-
 \makecvtitle
 
 
 \section{Bildung}\label{sec:bildung}
-\tlcventry{2009}{2012}{Abschluss 1}{Institut}{Stadt}{\textit{Note}}{Beschreibung} % arguments 3 to 6 can be left empty
-\tlcventry{2012}{2017}{Abschluss 2}{Institut}{Stadt}{\textit{Note}}{Beschreibung}
+\cventry{2009--2012}{Abschluss 1}{Institut}{Stadt}{\textit{Note}}{Beschreibung}
+\cventry{2012--2017}{Abschluss 2}{Institut}{Stadt}{\textit{Note}}{Beschreibung}
 
 
 \section{Master Thesis}\label{sec:master-thesis}
@@ -19,28 +15,28 @@
 \section{Erfahrung}\label{sec:erfahrung}
 
 \subsection{Beruflich}\label{subsec:beruflich}
-\tlcventry{2017}{2021}{Jobtitel}{Arbeitgeber}{Stadt}{}{Generelle Beschreibung, die nicht länger als 1--2 Zeilen ist.\newline{}
+\cventry{2017--2021}{Jobtitel}{Arbeitgeber}{Stadt}{}{Generelle Beschreibung, die nicht länger als 1--2 Zeilen ist.\newline
 Detaillierte Leistungen:
     \begin{itemize}
         \item Leistung 1
-        \item Leistung 2 (with sub-leistungen)
+        \item Leistung 2 (mit Unter-leistungen)
         \begin{itemize}
-            \item Sub-leistung (a);
-            \item Sub-leistung (b), with sub-sub-leistungen (nicht machen!);
+            \item Unter-leistung (a);
+            \item Unter-leistung (b), mit Unter-unter-leistungen (nicht machen!);
             \begin{itemize}
-                \item Sub-sub-leistung i;
-                \item Sub-sub-leistung ii;
-                \item Sub-sub-leistung iii;
+                \item Unter-unter-leistung i;
+                \item Unter-unter-leistung ii;
+                \item Unter-unter-leistung iii;
             \end{itemize}
-            \item Sub-leistung (c);
+            \item Unter-leistung (c);
         \end{itemize}
         \item Leistung 3
         \item Leistung 4
     \end{itemize}}
-\tlcventry{2021}{2022}{Jobtitel}{Arbeitgeber}{Stadt}{}{Beschreibung Zeile 1\newline{}Beschreibung Zeile 2}
+\cventry{2021--2022}{Jobtitel}{Arbeitgeber}{Stadt}{}{Beschreibung Zeile 1\newline{}Beschreibung Zeile 2}
 
 \subsection{Verschiedenes}\label{subsec:verschiedenes}
-\tlcventry{2013}{2013}{Jobtitel}{Arbeitgeber}{Stadt}{}{Beschreibung}
+\cventry{2013--2013}{Jobtitel}{Arbeitgeber}{Stadt}{}{Beschreibung}
 
 
 \section{Sprachen}\label{sec:sprachen}
@@ -54,25 +50,28 @@ Detaillierte Leistungen:
 \cvdoubleitem{Kategorie 1}{XXX, YYY, ZZZ}{Kategorie 4}{XXX, YYY, ZZZ}
 \cvdoubleitem{Kategorie 2}{XXX, YYY, ZZZ}{Kategorie 5}{XXX, YYY, ZZZ}
 \cvdoubleitem{Kategorie 3}{XXX, YYY, ZZZ}{Kategorie 6}{XXX, YYY, ZZZ}
+% \cvtripleitem{Kategorie 7}{XYZ}{Kategorie 8}{XYZ}{Kategorie 9}{XYZ} % TODO Only with moderncv 2.4.1
 
 
 \section{Fähigkeitenmatrix}\label{sec:faehigkeitenmatrix}
-\cvskilllegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
-\cvskillhead[0em][Level][Fähigkeit][Jahre][Bemerkung]
+\cvitem{Fähigkeitenmatrix}{Alternativ können Sie auch eine Kompetenzmatrix erstellen, um Ihre Fähigkeiten zu präsentieren.}
+\cvskilllegend*[1em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
+\cvskillhead[-0.1em][Level][Fähigkeit][Jahre][Bemerkung]
 \cvskillentry*{Sprache:}{3}{Python}{2}{Ich bin so erfahren in Python und habe schon eine Million Projekte realisiert. Mindestens.}
 \cvskillentry{}{2}{LilyPond}{14}{So viele Notenblätter! Mann, ich bin der Beste!}
 \cvskillentry{}{3}{\LaTeX}{14}{Offensichtlich rocke ich bei \LaTeX}
 \cvskillentry*{OS:}{3}{Linux}{2}{Ich benutze übrigends nur Archlinux}
-\cvskillentry*[1em]{Methoden}{4}{SCRUM}{8}{SCRUM Master seit 5 years}
+\cvskillentry*[1em]{Methoden}{4}{SCRUM}{8}{SCRUM Master seit 5 Jahren}
 
 
 \section{Interessen}\label{sec:Interessen}
 \cvitem{Hobby 1}{Beschreibung}
 \cvitem{Hobby 2}{Beschreibung}
 \cvitem{Hobby 3}{Beschreibung}
+\cvitem{Hobby 4}{Beschreibung}
 
 
-\section{Extra 1}\label{sec:extra-1}
+\sectionavoidpagebreak{Extra 1}{extra-1}
 \cvlistitem{Element 1}
 \cvlistitem{Element 2}
 \cvlistitem{Element 3. Dieser Punkt ist besonders lang und erstreckt sich daher normalerweise über mehrere Zeilen. Haben Sie die Einrückung beim Zeilenumbruch bemerkt?}
@@ -80,7 +79,7 @@ Detaillierte Leistungen:
 
 \section{Extra 2}\label{sec:extra-2}
 \cvlistdoubleitem{Element 1}{Element 4}
-\cvlistdoubleitem{Element 2}{Element 5~\parencite{MaxMustermann2021a}}
+\cvlistdoubleitem{Element 2}{Element 5}
 \cvlistdoubleitem{Element 3}{Element 6. Wie Element 3 in der einspaltigen Liste zuvor ist dieses Element besonders lang, so dass es über mehrere Zeilen umgebrochen wird.}
 
 
@@ -94,7 +93,3 @@ Detaillierte Leistungen:
     \end{itemize}(Mehr auf Anfrage)}
     \cvcolumn[0.5]{Der ganze Rest \& einiges mehr}{\textit{Diese} Person, und auch \textbf{solche} (Alles auf Anfrage verfügbar).}
 \end{cvcolumns}
-
-
-~\nocite{*} % Zum Auflisten aller Einträge, auch wenn sie nicht zitiert werden.
-\printbibliography[title={Veröffentlichungen}]
