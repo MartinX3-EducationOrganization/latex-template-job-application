@@ -1,0 +1,115 @@
+\documentclass{moderncv}
+\input{datenbanken/Meta}
+\RequirePackage{aussehen/CV}
+
+\begin{document}
+    \makecvtitle
+
+
+    \section{Bildung}\label{sec:bildung}
+    \cventry{2012 -- 2017}{Abschluss 2}{Institut}{Stadt}{\textit{Note}}{Beschreibung}
+    \cventry{2009 -- 2012}{Abschluss 1}{Institut}{Stadt}{\textit{Note}}{Beschreibung}
+
+
+    \section{Master Thesis}\label{sec:master-thesis}
+    \cvitem{Titel}{\emph{Titel}}
+    \cvitem{Betreuer}{Betreuer}
+    \cvitem{Beschreibung}{Kurze Zusammenfassung der Arbeit}
+
+
+    \section{Erfahrung}\label{sec:erfahrung}
+
+    \subsection{Beruflich}\label{subsec:beruflich}
+    \cventry{03/2021 -- heute}{Junior Software Entwickler}{Arbeitgeber}{Stadt}{}{
+        \begin{itemize}
+            \item Datenverwaltung für medizinische Behandlungen
+            \begin{itemize}
+                \item Entwicklung
+                \item Dokumentation
+                \item Testung
+            \end{itemize}
+            \item Verwendete Technologien
+            \begin{itemize}
+                \item Scrum
+                \item Java
+                \item Apache NetBeans
+                \item JUnit
+            \end{itemize}
+        \end{itemize}}
+    \cventry{02/2021 -- 03/2021}{Warten auf Vertragsbeginn}{}{}{}{}
+    \cventry{06/2017 -- 02/2021}{Junior Software Entwickler}{Arbeitgeber}{Stadt}{}{
+        \begin{itemize}
+            \item Datenverwaltung für medizinische Behandlungen
+            \begin{itemize}
+                \item Entwicklung
+                \item Dokumentation
+                \item Testung
+            \end{itemize}
+            \item Verwendete Technologien
+            \begin{itemize}
+                \item Scrum
+                \item Java
+                \item Apache NetBeans
+                \item JUnit
+            \end{itemize}
+        \end{itemize}}
+
+    \subsection{Verschiedenes}\label{subsec:verschiedenes}
+    \cventry{2013 -- 2013}{Praktikum}{Arbeitgeber}{Stadt}{}{Beschreibung}
+
+
+    \section{Erfahrungen}\label{sec:erfahrungen}
+    \cvdoubleitem{Kategorie 1}{XXX, YYY, ZZZ}{Kategorie 4}{XXX, YYY, ZZZ}
+    \cvdoubleitem{Kategorie 2}{XXX, YYY, ZZZ}{Kategorie 5}{XXX, YYY, ZZZ}
+    \cvdoubleitem{Kategorie 3}{XXX, YYY, ZZZ}{Kategorie 6}{XXX, YYY, ZZZ}
+% \cvtripleitem{Kategorie 7}{XYZ}{Kategorie 8}{XYZ}{Kategorie 9}{XYZ} % TODO Only with moderncv 2.4.1
+
+
+    \section{Sprachen}\label{sec:sprachen}
+    \cvitemwithcomment{Sprache 1}{Fähigkeitenniveau}{Kommentar}
+    \cvitemwithcomment{Sprache 2}{Fähigkeitenniveau}{Kommentar}
+    \cvitemwithcomment{Sprache 3}{Fähigkeitenniveau}{Kommentar}
+    \cvitemwithcomment{Sprache 4}{Fähigkeitenniveau}{Kommentar}
+
+
+    \section{Fähigkeitenmatrix}\label{sec:faehigkeitenmatrix}
+    \cvitem{Fähigkeitenmatrix}{Alternativ können Sie auch eine Kompetenzmatrix erstellen, um Ihre Fähigkeiten zu präsentieren.}
+    \cvskilllegend*[1em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
+    \cvskillhead[-0.1em][Level][Fähigkeit][Jahre][Bemerkung]
+    \cvskillentry*{Sprache:}{3}{Python}{2}{Ich bin so erfahren in Python und habe schon eine Million Projekte realisiert. Mindestens.}
+    \cvskillentry{}{2}{LilyPond}{14}{So viele Notenblätter! Mann, ich bin der Beste!}
+    \cvskillentry{}{3}{\LaTeX}{14}{Offensichtlich rocke ich bei \LaTeX}
+    \cvskillentry*{OS:}{3}{Linux}{2}{Ich benutze übrigends nur Archlinux}
+    \cvskillentry*[1em]{Methoden}{4}{SCRUM}{8}{SCRUM Master seit 5 Jahren}
+
+
+    \section{Interessen}\label{sec:Interessen}
+    \cvitem{Hobby 1}{Beschreibung}
+    \cvitem{Hobby 2}{Beschreibung}
+    \cvitem{Hobby 3}{Beschreibung}
+    \cvitem{Hobby 4}{Beschreibung}
+
+
+    \sectionavoidpagebreak{Extra 1}{extra-1}
+    \cvlistitem{Element 1}
+    \cvlistitem{Element 2}
+    \cvlistitem{Element 3. Dieser Punkt ist besonders lang und erstreckt sich daher normalerweise über mehrere Zeilen. Haben Sie die Einrückung beim Zeilenumbruch bemerkt?}
+
+
+    \section{Extra 2}\label{sec:extra-2}
+    \cvlistdoubleitem{Element 1}{Element 4}
+    \cvlistdoubleitem{Element 2}{Element 5}
+    \cvlistdoubleitem{Element 3}{Element 6. Wie Element 3 in der einspaltigen Liste zuvor ist dieses Element besonders lang, so dass es über mehrere Zeilen umgebrochen wird.}
+
+
+    \section{Referenzen}\label{sec:referenzen}
+    \begin{cvcolumns}
+        \cvcolumn{Kategorie 1}{\begin{itemize}
+                                   \item Person 1\item Person 2\item Person 3
+        \end{itemize}}
+        \cvcolumn{Kategorie 2}{Unter anderem:\begin{itemize}
+                                                 \item Person 1, and\item Person 2
+        \end{itemize}(Mehr auf Anfrage)}
+        \cvcolumn[0.5]{Der ganze Rest \& einiges mehr}{\textit{Diese} Person, und auch \textbf{solche} (Alles auf Anfrage verfügbar).}
+    \end{cvcolumns}
+\end{document}
