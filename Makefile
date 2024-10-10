@@ -1,8 +1,3 @@
-DOCUMENT_NAME_APPLICATION = abschnitte/Bewerbung/*
-DOCUMENT_NAME_JOB_SEARCH = abschnitte/Jobsuche/*
-DOCUMENT_NAME_QUESTIONS = abschnitte/Fragen/*
-COMPILER = latexmk -lualatex --output-directory=out
-
 default | help:
 	@echo 'make | Zeigt die Hilfe'
 	@echo 'make build | Erstelle alle Dokumente mit latexmk'
@@ -15,13 +10,17 @@ default | help:
 build: build_application build_job_search build_questions
 
 build_application:
-	$(COMPILER) $(DOCUMENT_NAME_APPLICATION)
+	$(call compile,Bewerbung)
 
 build_job_search:
-	$(COMPILER) $(DOCUMENT_NAME_JOB_SEARCH)
+	$(call compile,Jobsuche)
 
 build_questions:
-	$(COMPILER) $(DOCUMENT_NAME_QUESTIONS)
+	$(call compile,Fragen)
 
 clean:
 	rm -rf out/
+
+define compile
+	latexmk -lualatex --output-directory=out/${1} abschnitte/${1}/*
+endef
