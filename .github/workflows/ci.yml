@@ -13,7 +13,7 @@ jobs:
       - name: Install TeX Live
         run: sudo apt update && sudo apt install biber latexmk texlive texlive-bibtex-extra texlive-fonts-extra texlive-lang-german texlive-latex-extra texlive-luatex
       - name: Set up Git repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Compile LaTeX document
         run: make build
       - name: Upload artifact
